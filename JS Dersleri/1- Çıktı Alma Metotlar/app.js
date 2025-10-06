@@ -9,8 +9,7 @@ console.log("Ali Kaan Koç");
 console.log({name: "Ali Kaan Koç", job: "Student"});
 
 console.log(window);
-console.log(window.location.href)
-
+console.log(window.location.href);
 // console.clear();  Konsolu Temizler
 
 //alert ile çıktı alma
