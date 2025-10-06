@@ -2,6 +2,16 @@
 
 var a = 7;
 function method1(){
-    console.log(a);
+   console.log(a);
 }
+ 
 method1();
+
+
+// Function scope: sadece fonksiyonun içinde erişilebilir. Fonksiyonun içinde tanımlanır.
+
+function method2(){
+    var b = 13;
+    console.log(b);
+}
+method2();
