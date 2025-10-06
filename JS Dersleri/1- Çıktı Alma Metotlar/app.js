@@ -20,3 +20,5 @@ let a = 12;
 let b=  13;
 
 alert("İki Sayının Toplamı: " + (a+b));
+
+    
