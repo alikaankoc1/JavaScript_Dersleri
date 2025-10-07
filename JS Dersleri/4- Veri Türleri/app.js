@@ -18,3 +18,14 @@ let result = a + b;
 
 console.log(result <52);
 console.log(result > 25);
+
+// object veri türü: birden fazla veriyi tek bir değişkende saklamak için kullanılır. İçerisinde anahtar-değer çiftleri bulunur.
+
+let users = {
+    name:"Ali Kaan Koç",
+    surname: "Koç",
+    age: 20,
+    job: "Software Developer"
+}
+console.log(users);
+console.log(typeof users);
