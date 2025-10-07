@@ -9,3 +9,12 @@ let age = 20;
 console.log(typeof age);
 let price = 19.99;
 console.log(typeof price);
+
+// boolean veri türü: true ve false olmak üzere iki değerden oluşur.
+
+let a = 18;
+let b= 7;
+let result = a + b;
+
+console.log(result <52);
+console.log(result > 25);
