@@ -22,5 +22,19 @@ switch(islem)
         }
         break;
 
-        
+     case 3:
+        let yatirilacakTutar = Number(prompt("Yatırılacak tutarı giriniz:"));
+         bakiye = (bakiye + yatirilacakTutar) ;
+        alert("İşlem Başarılı Güncel Bakiye: " + bakiye);
+
+        break;
+
+    case 4:
+        alert("Çıkış Yapılıyor. Sağlıklı Günler Dileriz.");
+       break;
+
+       default:
+        alert("Hatalı işlem tuşladınız");
+        break;
+
 }
