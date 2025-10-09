@@ -1,6 +1,6 @@
 let dizel = 24.53;
 let benzin = 22.25;
-let lgp = 11.1;
+let lpg = 11.1;
 
 const newLine = "\r\n";
 
@@ -11,13 +11,34 @@ let litre = Number(prompt("Almak İstediğiniz Litre Tutarını Giriniz:"));
 let bakiye = Number(prompt("Lütfen Bakiyenizi Giriniz:"));
 
 if(yakitTipi == "1"){
-    // dizel
+    //DİZEL
+    let odencekTutar = dizel * litre;
+    if(bakiye >= odencekTutar){
+        alert("Ödeme Başarılı" + newLine + "Kalan Bakiyeniz:" + (bakiye - odencekTutar));
+    }
+    else{
+        alert("Yetersiz Bakiye " + newLine + "Gerekli Tutar: " + odencekTutar + "TL");
+    }
 }
 else if(yakitTipi == "2"){
     // benzin
+let odencekTutar = benzin * litre
+       if(bakiye >= odencekTutar){
+        alert("Ödeme Başarılı" + newLine + "Kalan Bakiyeniz:" + (bakiye - odencekTutar));
+    }
+    else{
+        alert("Yetersiz Bakiye " + newLine + "Gerekli Tutar: " + odencekTutar + "TL");
+    }
 }
 else if(yakitTipi == "3"){
     // lpg
+let odencekTutar = lpg * litre
+       if(bakiye >= odencekTutar){
+        alert("Ödeme Başarılı" + newLine + "Kalan Bakiyeniz:" + (bakiye - odencekTutar));
+    }
+    else{
+        alert("Yetersiz Bakiye " + newLine + "Gerekli Tutar: " + odencekTutar + "TL");
+    }
 }
 else{
     console.log("Hatalı Yakıt Türü Girildi");
