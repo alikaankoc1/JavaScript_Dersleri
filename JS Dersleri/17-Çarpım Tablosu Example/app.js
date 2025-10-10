@@ -1,0 +1,1 @@
+// for döngüsü çarpım tablo örneği
