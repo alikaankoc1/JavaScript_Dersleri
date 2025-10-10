@@ -19,3 +19,9 @@ for(let i=0; i<=10; i++){
     }
 }
 
+let toplam = 0;
+for(let i = 30; i>=1;  i--){
+    toplam +=i
+    console.log(i);
+}
+console.log("Toplam:" +toplam);
