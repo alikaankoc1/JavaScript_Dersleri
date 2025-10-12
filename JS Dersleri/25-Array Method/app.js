@@ -15,3 +15,7 @@ console.log(cars);
 //shift dizinin ilk elemanı kaldırır.
 cars.shift();
 console.log(cars);
+
+//splice alınan parametre değere göre hem silme hem ekleme işlemi yapar.
+cars.splice(2,0, "CHAVROLET");
+console.log(cars);
