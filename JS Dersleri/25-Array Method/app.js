@@ -25,3 +25,7 @@ console.log(typeof cars);
 let stringCars = cars.toString();
 console.log(typeof stringCars);
 console.log(stringCars);
+
+// reverse diziyi ters çevirir.
+cars.reverse();
+console.log(cars);
