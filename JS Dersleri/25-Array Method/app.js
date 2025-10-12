@@ -7,3 +7,7 @@ console.log(cars);
 //unshift dizinin başına eleman ekler.
 cars.unshift("CHERRY");
 console.log(cars);
+
+//pop dizinin son elemanı kaldırır.
+cars.pop();
+console.log(cars);
