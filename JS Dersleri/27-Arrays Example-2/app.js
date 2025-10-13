@@ -39,3 +39,26 @@ let raf52 = {kod:"5.2.RAF",goster: false};
 let raf53 = {kod: "5.3.RAF",goster:false}
 let raf54 = {kod: "5.4.RAF", goster: false}
 let raf55 = {kod: "5.5.RAF", goster: false}
+
+let raflar = [
+    [raf51,raf52,raf53,raf54,raf55],
+    [raf41,raf42,raf43,raf44,raf45],
+    [raf31,raf32,raf33,raf34,raf35],
+    [raf21,raf22,raf23,raf24,raf25],
+    [raf11,raf12,raf13,raf14,raf15]
+]
+
+function rafOlustur(){
+     console.clear();
+    let satir = "";
+for(let i = 0; i<raflar.length; i++){
+   
+    for(let j = 0; j<5; j++){
+           satir += "|" + raflar[i][j].kod + "|";
+
+    }
+    console.log(satir);
+    satir= "";
+}
+}
+rafOlustur();
