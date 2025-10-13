@@ -1,8 +1,8 @@
-let kitap1 = {isim: "Kirpinin Zarafeti", yazar: "Muriel Barbery", fiyat: 198}
-let kitap2 = {isim: "Gurur ve Önyargı", yazar: "Jane Austen", fiyat: 111}
-let kitap3 = {isim: "Kuyucaklı Yusuf", yazar: "Sabahattin Ali", fiyat: 39}
-let kitap4 = {isim: "Bir Kadının Yaşamından 24 Saat", yazar: "Stefan Zweig", fiyat:44}
-let kitap5 = {isim: "Beyoğlu Rapsodisi", yazar: "Ahmet Ümit", fiyat: 251}
+let kitap1 = {isim: "Kirpinin Zarafeti", yazar: "Muriel Barbery", fiyat: 198,raf:"1.5.RAF"}
+let kitap2 = {isim: "Gurur ve Önyargı", yazar: "Jane Austen", fiyat: 111, raf:"2.1.RAF"}
+let kitap3 = {isim: "Kuyucaklı Yusuf", yazar: "Sabahattin Ali", fiyat: 39, raf: "3.4.RAF"}
+let kitap4 = {isim: "Bir Kadının Yaşamından 24 Saat", yazar: "Stefan Zweig", fiyat:44, raf:"4.2.RAF"}
+let kitap5 = {isim: "Beyoğlu Rapsodisi", yazar: "Ahmet Ümit", fiyat: 251,raf:"5.3.RAF"}
 
 let kitaplar = [kitap1, kitap2, kitap3, kitap4, kitap5];
 
@@ -27,11 +27,11 @@ let raf34 = {kod: "3.4.RAF", goster: false}
 let raf35 = {kod: "3.5.RAF", goster: false}
 
 
-let raf41 = {kod: "1.1.RAF", goster: false}
-let raf42 = {kod:"1.2.RAF",goster: false};
-let raf43 = {kod: "1.3.RAF",goster:false}
-let raf44 = {kod: "1.4.RAF", goster: false}
-let raf45 = {kod: "1.5.RAF", goster: false}
+let raf41 = {kod: "4.1.RAF", goster: false}
+let raf42 = {kod:"4.2.RAF",goster: false};
+let raf43 = {kod: "4.3.RAF",goster:false}
+let raf44 = {kod: "4.4.RAF", goster: false}
+let raf45 = {kod: "4.5.RAF", goster: false}
 
 
 let raf51 = {kod: "5.1.RAF", goster: false}
@@ -54,11 +54,29 @@ function rafOlustur(){
 for(let i = 0; i<raflar.length; i++){
    
     for(let j = 0; j<5; j++){
-           satir += "|" + raflar[i][j].kod + "|";
+           satir += "|" + (raflar[i][j].goster ? raflar[i][j].kod : "-----") + "";
 
     }
     console.log(satir);
+    console.log("------------------------------------------")
     satir= "";
 }
 }
+
+let kitapIsmi = prompt("Lütfen aradığınız kitap ismini giriniz:");
+function kodBul(kitapIsmi){
+    kitaplar.forEach(function(kitap){
+   if(kitap.isim.toUpperCase().includes(kitapIsmi.toUpperCase(),0)){
+    return kitap.raf;
+   }
+    })
+    return null;
+}
 rafOlustur();
+let rafKod  = kodBul(kitapIsmi);
+if(rafKod != null){
+
+}
+else{
+    alert("Aradığınız kitap mevcut değildir !")
+}
