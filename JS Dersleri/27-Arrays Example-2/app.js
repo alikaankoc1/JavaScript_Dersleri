@@ -65,15 +65,27 @@ for(let i = 0; i<raflar.length; i++){
 
 let kitapIsmi = prompt("Lütfen aradığınız kitap ismini giriniz:");
 function kodBul(kitapIsmi){
+    let rafKod = null;
     kitaplar.forEach(function(kitap){
    if(kitap.isim.toUpperCase().includes(kitapIsmi.toUpperCase(),0)){
-    return kitap.raf;
+    rafKod = kitap.raf;
    }
     })
-    return null;
+    return rafKod;
 }
 rafOlustur();
 let rafKod  = kodBul(kitapIsmi);
+
+function raftaGoster(rafKod){
+    for(let i = 0; i<raflar.length; i++){
+        for(let j = 0; j<5; j++){
+            if(raflar[i][j].kod==rafKod){
+                 raflar[i][j].goster = true;
+                 break;
+            }
+        }
+    }
+}
 if(rafKod != null){
 
 }
