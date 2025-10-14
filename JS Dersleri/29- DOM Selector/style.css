@@ -1,0 +1,133 @@
+/* Genel Stil Ayarları */
+body {
+    /* Hafif gri arka plan rengi */
+    background-color: #f8f9fa; 
+    /* Metin rengini biraz daha koyu gri yapar */
+    color: #343a40; 
+}
+
+/* Kapsayıcı (Container) ve Kart (Card) Stilleri */
+.container {
+    /* Ekranın ortasında kalması için maksimum genişlik ayarı */
+    width:1800px;
+    padding-top: 20px;
+}
+
+.card {
+    /* Kartın hafif yükselmiş görünmesi için hafif gölge */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Köşeleri hafif yuvarlak yapar */
+    border-radius: 8px;
+    border: none; /* Bootstrap varsayılan kart kenarlığını kaldırır */
+}
+
+/* Başlık Stilleri */
+.card-header {
+    /* Beyaz arka plan ve alt kısma hafif bir çizgi */
+    background-color: white; 
+    border-bottom: 1px solid #dee2e6;
+    /* Başlık alanına biraz iç boşluk ekler */
+    padding: 15px 20px;
+    /* Üst köşelerin yuvarlak olmasını sağlar */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.card-title {
+    /* Başlık font ağırlığını normal yapar */
+    font-weight: 500;
+    /* Margin'i sıfırlar */
+    margin-bottom: 0;
+    /* Daha belirgin bir renk */
+    color: #212529; 
+}
+
+/* Form ve Giriş Alanı Stilleri */
+.form-control {
+    /* Giriş alanlarının köşelerini hafif yuvarlak yapar */
+    border-radius: 5px; 
+    /* Odaklanıldığında kenarlığın rengini mavi yapar */
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus {
+    /* Odaklandığında dış kenarlığı kaldırıp hafif bir mavi gölge verir */
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Buton Stilleri */
+/* 'Todo Ekleyin' ve 'Tüm Todoları Temizle' butonları */
+.btn-primary {
+    /* Görseldeki gibi daha canlı bir mavi ton */
+    background-color: #007bff;
+    border-color: #007bff;
+    /* Daha fazla iç boşluk */
+    padding: 8px 15px;
+    /* Köşeleri hafif yuvarlak yapar */
+    border-radius: 5px;
+    /* Hafif bir gölge */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Geçiş efekti */
+    transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+.btn-primary:hover {
+    /* Mouse üzerine gelince rengi koyulaştırır */
+    background-color: #0056b3;
+    border-color: #0056b3;
+    /* Gölgeyi hafifçe artırır */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Ayrıcı Çizgi Stili */
+hr {
+    /* Hafif bir çizgi rengi */
+    border-top: 1px solid #e9ecef;
+    /* Üstten ve alttan boşluk ekler */
+    margin: 1.5rem 0; 
+}
+
+/* Todo Listesi Elemanları Stili */
+.list-group-item {
+    /* List item'ların beyaz arka planı ve hafif bir kenarlığı */
+    background-color: white;
+    border: 1px solid #e9ecef;
+    /* İçeriklerin dikeyde hizalanmasını sağlar */
+    align-items: center; 
+    /* Dikey boşluğu artırır */
+    padding: 10px 15px;
+    /* Köşeleri hafif yuvarlak yapar */
+    border-radius: 5px !important; 
+    /* Aralarındaki boşluğu azaltır */
+    margin-bottom: 5px;
+    transition: background-color 0.2s;
+}
+
+.list-group-item:hover {
+    /* Mouse üzerine gelince hafif bir gri arka plan */
+    background-color: #f7f7f7;
+}
+
+/* Silme İkonu (X) Stili */
+.delete-item {
+    /* İkonun rengini görseldeki gibi yapar */
+    color: #007bff; 
+    /* Tıklanabilir alana geçiş efekti */
+    transition: color 0.2s;
+    /* İkon ile yazı arasına biraz boşluk */
+    margin-left: 10px; 
+    text-decoration: none; /* Alt çizgiyi kaldırır */
+}
+
+.delete-item:hover {
+    /* Mouse üzerine gelince rengi kırmızıya çevirir */
+    color: #dc3545; 
+    text-decoration: none;
+}
+
+/* Todo Listesi genel stili */
+.list-group {
+    /* Liste ve buton arasına boşluk */
+    margin-bottom: 1rem; 
+}
