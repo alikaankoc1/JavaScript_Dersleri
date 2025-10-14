@@ -41,3 +41,19 @@ console.log(forms);
 
 let tag = document.getElementsByTagName("li");
 console.log(tag);
+
+
+// querySelector querySelectorAll
+
+let sec = document.querySelector("#todoListForm");
+console.log(sec);
+
+let özellik = document.querySelector("#todoClearButton");
+özellik.innerHTML = "SDFDSAFD"
+console.log(özellik);
+
+let sinif = document.querySelectorAll(".card-body");
+sinif.forEach(function(sira){
+    console.log(sinif);
+})
+console.log(sinif[0]);
