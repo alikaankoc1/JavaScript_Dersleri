@@ -1,12 +1,16 @@
-console.log(document.location);
-// let value = document.location.host;
-// let value = document.location.port;
-// let value = document.location.hash;
-let value = document.links;
+// let value = document.links;
+// let value = document.links[3];
 
-let result = document.links.item(3).className;
-console.log(result);
+// let value = document.links.item(4);
+
+// let value = document.links.item(3).getAttribute("class");
+
+// let value = document.forms.item(1).getAttribute("class");
+let value = document.forms.item(0).getAttribute("id");
 
 
 
-// console.log(value);
+
+
+
+console.log(value);
