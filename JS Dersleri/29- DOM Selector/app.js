@@ -31,3 +31,13 @@ let result = document.getElementsByClassName("card-title");
 console.log(result.item(1));
 result.item(0).innerHTML  = "Yapılacaklar Listesi"
 result.item(1).textContent = "asdfasdf"
+
+
+let forms = Array.from(document.getElementsByTagName("form"));
+forms.forEach(function(form){
+    console.log(form.id)
+})
+console.log(forms);
+
+let tag = document.getElementsByTagName("li");
+console.log(tag);
