@@ -36,6 +36,7 @@ function run4(e){
 const cardBody = document.querySelectorAll(".card-body")[1];
 
 cardBody.addEventListener("mouseover",run5);
+cardBody.addEventListener("mouseout",run5);
 
 function run5(e){
     console.log(e.type);
