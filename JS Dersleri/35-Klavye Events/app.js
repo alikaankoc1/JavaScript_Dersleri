@@ -13,7 +13,11 @@ function run(e){
 document.addEventListener("keydown",run2);
 
 function run2(e){
-    console.log(e.key);
+    console.log(e.keyCode);
+    if(e.keyCode == 116){
+        alert("f5 tuşuna basıldı");
+    }
+    e.preventDefault();
 }
 
 // keyup: tuştan elini kaldırdığında çalışır
