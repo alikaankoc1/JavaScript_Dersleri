@@ -30,3 +30,13 @@ cardTitle.addEventListener("dbclick",run4);
 function run4(e){
     console.log(e.type);
 }
+
+//mouseover
+
+const cardBody = document.querySelectorAll(".card-body")[1];
+
+cardBody.addEventListener("mouseover",run5);
+
+function run5(e){
+    console.log(e.type);
+}
