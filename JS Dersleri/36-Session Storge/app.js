@@ -20,3 +20,15 @@ console.log("Değer Bulundu:" + value);
 
 // hepsinin silme
 sessionStorage.clear();
+
+// session-storge array olarak yazdırma
+
+let names = ["Ali", "Ayşe", "Fatma", "Ahmet", "Cemal"];
+
+sessionStorage.setItem("array", JSON.stringify(names));
+
+let result = JSON.parse(sessionStorage.getItem("array"));
+result.forEach(function(name){
+    console.log(name);
+})
+// console.log(result);
