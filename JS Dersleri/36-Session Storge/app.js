@@ -16,3 +16,7 @@ if(value == null){
 }else{
 console.log("Değer Bulundu:" + value);
 }
+
+
+// hepsinin silme
+sessionStorage.clear();
