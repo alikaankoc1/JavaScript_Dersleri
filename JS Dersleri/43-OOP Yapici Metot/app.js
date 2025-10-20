@@ -37,3 +37,6 @@ const result2 = new Insan("Aslı","Gülmez","Nurse",24 , 50)
 
 result.bilgileriGoster();
 result2.bilgileriGoster();
+
+console.log(result2.d);
+console.log(result.c);
