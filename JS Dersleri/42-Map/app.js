@@ -41,3 +41,10 @@ const yazdir = Array.from(set);
 console.log(typeof yazdir);
 
 yazdir.forEach((yaz)=>console.log(yaz))
+
+// Template Literals
+
+function write(name,surname){
+    console.log(`İsim: ${name} Soyisim: ${surname}`);
+}
+write("Ali Kaan", "Koç");
