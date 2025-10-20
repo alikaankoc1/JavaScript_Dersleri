@@ -13,9 +13,17 @@ console.log(map1.size);
 console.log(map1.delete(34));
 console.log(map1.size);
 
+// destructing
 for(let [key,value] of map1){
     console.log(key,value);
 }
 
+// foreach loop
 const newArray = Array.from(map1);
 newArray.forEach((array)=>console.log(array))
+
+const value = map1.values();
+console.log(value);
+
+const key = map1.keys();
+console.log(key)
