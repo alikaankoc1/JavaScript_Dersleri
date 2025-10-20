@@ -10,3 +10,12 @@ console.log(donenDeger);
 console.log(map1.size);
 
 
+console.log(map1.delete(34));
+console.log(map1.size);
+
+for(let [key,value] of map1){
+    console.log(key,value);
+}
+
+const newArray = Array.from(map1);
+newArray.forEach((array)=>console.log(array))
