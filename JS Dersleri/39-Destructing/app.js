@@ -30,3 +30,16 @@ const hesapla = (a,b)=>{
 
 let [a,b,c,d] = hesapla(10,2);
 console.log(a,b,c,d);
+
+// example2
+const person = {
+    name: "Ali Kaan",
+    surname: "-Koç",
+    job: "-Software Developer",
+    age: "-" + 25,
+    salary: "-" + 59.750
+}
+
+let{name,surname,job,age,salary} = person;
+
+console.log(name,surname,job,age,salary);
