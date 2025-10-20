@@ -27,3 +27,17 @@ console.log(value);
 
 const key = map1.keys();
 console.log(key)
+
+// set
+
+const set = new Set();
+
+set.add("Ali");
+set.add(42);
+set.add({username: 123, password: 854});
+set.add("pencil");
+const yazdir = Array.from(set); 
+// console.log(set.size);
+console.log(typeof yazdir);
+
+yazdir.forEach((yaz)=>console.log(yaz))
