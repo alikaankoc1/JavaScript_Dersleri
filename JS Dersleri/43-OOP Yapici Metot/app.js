@@ -31,6 +31,9 @@ class Insan{
     }
 }
 
-let result = new Insan("Ali Kaan","Koç","Software Developer",24,57,950);
+const result = new Insan("Ali Kaan","Koç","Software Developer",24,57,950);
+const result2 = new Insan("Aslı","Gülmez","Nurse",24 , 50)
+
 
 result.bilgileriGoster();
+result2.bilgileriGoster();
