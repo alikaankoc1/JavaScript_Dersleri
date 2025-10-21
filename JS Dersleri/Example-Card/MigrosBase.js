@@ -5,4 +5,13 @@ class MigrosBase{
         this.kartVarmi = kartVarmi;
         this.urunler = urunler;
     }
+    hesapla(){
+
+    }
+    urunleriKontrolEt(urunler){
+        if(urunler != null && urunler.length > 0){
+            return true;
+        }
+        return false;
+    }
 }
