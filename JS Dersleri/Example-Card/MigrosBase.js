@@ -9,10 +9,18 @@ class MigrosBase{
     hesapla(){
         let odenecekTutar = 0;
      if(this.urunleriKontrolEt(this.urunler)){
-        // sepet dolu
-        this.urunler.foreach((urun)=>{
+        if(this.kartVarmi){
+ this.urunler.foreach((urun)=>{
          odenecekTutar += urun.fiyat - (urun.fiyat * this.indirimOrani);
         })
+        }
+        else{
+        this.urunler.foreach((urun)=>{
+            odenecekTutar += urun.fiyat;
+        })
+        }
+        // sepet dolu
+       
      }
      else{
         alert("Sepetinize en az 1 ürün eklemelisiniz !")
