@@ -17,6 +17,7 @@ class MigrosBase{
      else{
         alert("Sepetinize en az 1 ürün eklemelisiniz !")
      }
+     return odenecekTutar;
     }
     urunleriKontrolEt(urunler){
         if(urunler != null && urunler.length > 0){
