@@ -7,8 +7,12 @@ class MigrosBase{
         this.urunler = urunler;
     }
     hesapla(){
+        let odenecekTutar = 0;
      if(this.urunleriKontrolEt(this.urunler)){
         // sepet dolu
+        this.urunler.foreach((urun)=>{
+         odenecekTutar += urun.fiyat - (urun.fiyat * this.indirimOrani);
+        })
      }
      else{
         alert("Sepetinize en az 1 ürün eklemelisiniz !")
