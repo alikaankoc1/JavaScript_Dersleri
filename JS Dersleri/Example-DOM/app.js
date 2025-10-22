@@ -5,6 +5,7 @@ const green = document.getElementById("btn-green");
 
 red.addEventListener("click", () =>{
     document.body.style.backgroundColor = "red";
+    document.body.textContent =   "Click işlemi ile değişti"
 })
 
 blue.addEventListener("click",changeBlue);
