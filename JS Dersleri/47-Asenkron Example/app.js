@@ -19,7 +19,7 @@ const users = [
 
 function getUserId(callback){
     setTimeout(() => {
-        let userId= 3;
+        let userId= 5;
         // return 5;
         callback(userId);
     }, 1000);
@@ -38,3 +38,9 @@ function getPostByUserId(userId){
 }
 
 getUserId(getPostByUserId);
+
+
+
+// AJAX
+const xhr = XMLHttpRequest();
+console.log(xhr);
