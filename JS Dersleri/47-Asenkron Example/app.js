@@ -17,16 +17,18 @@ const users = [
     }
 ]
 
-function getUserId(){
+function getUserId(callback){
     setTimeout(() => {
-        return 5;
+        let userId= 3;
+        // return 5;
+        callback(userId);
     }, 1000);
 }
 
 function getPostByUserId(userId){
     console.log(userId)
     setTimeout(()=>{
-        users.foreach((user)=>{
+        users.forEach((user)=>{
             if(user.userId === userId){{
                 console.log(user.post);
             }}
@@ -35,5 +37,4 @@ function getPostByUserId(userId){
     },500)
 }
 
-let userId = getUserId();
- getPostByUserId(userId);
+getUserId(getPostByUserId);
