@@ -24,3 +24,5 @@ function getPost(url){
     .then((err)=> console.log(err))
 }
 getPost("https://jsonplaceholder.typicode.com/posts/1/comments");
+
+getPost("https://jsonplaceholder.typicode.com/users");
