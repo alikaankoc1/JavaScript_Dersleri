@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Ali Kaan",
+         "job": "Software Developer",
+         "age" : 24
+    },
+    {
+        "name": "Frank Lampard",
+        "job": "Football Player",
+        "age": 46
+    },
+    {
+        "name": "ALperen Şengün",
+        "job": "Basketboll Player",
+        "age": 25
+    }
+]
